@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hover effect for cards */
+.card-hover {
+    position: relative;
+  }
+  
+  .card-hover .hover-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: opacity 0.3s;
+  }
+  
+  .card-hover:hover .hover-content {
+    opacity: 1;
+  }
+  
